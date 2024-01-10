@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>CMCapital.Domain</AssemblyName>
+    <PackageId>CMCapital.Domain</PackageId>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ClientConcentration.cs" />
+    <Compile Remove="Fliq1.cs" />
+    <Compile Remove="Fliq2.cs" />
+    <Compile Remove="Fund.cs" />
+    <Compile Remove="FundHistoricalData.cs" />
+    <Compile Remove="FundsCompany.cs" />
+    <Compile Remove="GlobalPortfolio.cs" />
+    <Compile Remove="GlobalPortfolioComposition.cs" />
+    <Compile Remove="LiquidityModule.cs" />
+    <Compile Remove="LiquidityVolume.cs" />
+    <Compile Remove="PortfolioSettings.cs" />
+    <Compile Remove="PortfolioSettingsCustom.cs" />
+    <Compile Remove="PortfolioSettingsExtensions.cs" />
+    <Compile Remove="PortfolioWithdrawal.cs" />
+    <Compile Remove="ProcessPortfolioResult.cs" />
+    <Compile Remove="ProcessResult.cs" />
+    <Compile Remove="ProcessSecurityResult.cs" />
+    <Compile Remove="ResultAssembly.cs" />
+    <Compile Remove="SecurityCashflow.cs" />
+    <Compile Remove="SecurityType.cs" />
+    <Compile Remove="StressClassLiquidityIndexes.cs" />
+    <Compile Remove="StressClassTimeWindow.cs" />
+    <Compile Remove="StressClientWithdrawal.cs" />
+    <Compile Remove="StressParameter.cs" />
+    <Compile Remove="StressPortfolio.cs" />
+    <Compile Remove="StressScenario.cs" />
+    <Compile Remove="StressSecurityBlackListItem.cs" />
+    <Compile Remove="StressSecurityLiquidityIndex.cs" />
+    <Compile Remove="StressWithdrawal.cs" />
+    <Compile Remove="tblPortfolioSettingTypes.cs" />
+    <Compile Remove="tblRedemptionProbabilityMatrix.cs" />
+    <Compile Remove="Term.cs" />
+    <Compile Remove="TermsAndConditions.cs" />
+    <Compile Remove="Trade.cs" />
+    <Compile Remove="TradedVolume.cs" />
+    <Compile Remove="WithdrawalItem.cs" />
+    <Compile Remove="WithdrawalMatrix.cs" />
+    <Compile Remove="WithdrawalVolume.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog" Version="2.12.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+
+</Project>

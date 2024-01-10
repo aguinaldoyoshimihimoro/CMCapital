@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>CMCapital.ViewModel</AssemblyName>
+    <PackageId>CMCapital.ViewModel</PackageId>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="CashflowGapViewModel.cs" />
+    <Compile Remove="ClientConcentrationResultViewModel.cs" />
+    <Compile Remove="ClientConcentrationViewModel.cs" />
+    <Compile Remove="FundsCompanyViewModel.cs" />
+    <Compile Remove="LiquidityVolumeViewModel.cs" />
+    <Compile Remove="PortfolioByClientViewModel.cs" />
+    <Compile Remove="PortfolioByDetailViewModel.cs" />
+    <Compile Remove="PortfolioByIndustryViewModel.cs" />
+    <Compile Remove="PortfolioByIssuerViewModel.cs" />
+    <Compile Remove="PortfolioByTermViewModel.cs" />
+    <Compile Remove="PortfolioByTypeViewModel.cs" />
+    <Compile Remove="PortfolioSegmentsViewModel.cs" />
+    <Compile Remove="PortfolioSettingsCustomViewModel.cs" />
+    <Compile Remove="PortfolioSettingsViewModel.cs" />
+    <Compile Remove="PortfolioViewModel.cs" />
+    <Compile Remove="PortfolioWithdrawalViewModel.cs" />
+    <Compile Remove="ProcessPortfolioResultViewModel.cs" />
+    <Compile Remove="ProcessResultViewModel.cs" />
+    <Compile Remove="ProcessSecurityResultViewModel.cs" />
+    <Compile Remove="ResultAssemblyViewModel.cs" />
+    <Compile Remove="SecurityCashflowViewModel.cs" />
+    <Compile Remove="SecurityTypeViewModel.cs" />
+    <Compile Remove="SecurityViewModel.cs" />
+    <Compile Remove="StressClassLiquidityIndexesViewModel.cs" />
+    <Compile Remove="StressClassTimeWindowViewModel.cs" />
+    <Compile Remove="StressClientWithdrawalViewModel.cs" />
+    <Compile Remove="StressDataViewModel.cs" />
+    <Compile Remove="StressParameterViewModel.cs" />
+    <Compile Remove="StressPortfolioViewModel.cs" />
+    <Compile Remove="StressScenarioItemViewModel.cs" />
+    <Compile Remove="StressScenarioViewModel.cs" />
+    <Compile Remove="StressSecurityBlackListItemViewModel.cs" />
+    <Compile Remove="StressSecurityLiquidityIndexViewModel.cs" />
+    <Compile Remove="StressWithdrawalViewModel.cs" />
+    <Compile Remove="TermViewModel.cs" />
+    <Compile Remove="VolumeDataViewModel.cs" />
+    <Compile Remove="WithdrawalsMatrixViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CMCapital.Domain\CMCapital.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
